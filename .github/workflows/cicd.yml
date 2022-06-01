@@ -24,7 +24,7 @@ jobs:
           python-version: '3.9'
 
       - name: Run python challenge
-        run: python challenge.py
+        run: python challenge1/add_subtract.py
         
       - name: Run python unittest
-        run: python testing.py
+        run: python challenge1/unit_test.py
