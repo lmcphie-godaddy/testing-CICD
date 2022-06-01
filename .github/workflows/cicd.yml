@@ -15,8 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run challenge.py
-        run: echo Hello, world!
+      - name: List files
+        run: ls
 
-      - name: Run test_unit.py
-        run: echo Add other actions to build,
+      - name: Install python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: Run python script
+        run: python challenge.py
