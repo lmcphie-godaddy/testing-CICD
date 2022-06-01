@@ -9,5 +9,5 @@ def subtract(a:int, b:int):
     return (a - b)
 
 if __name__ == '__main__':
-    print(add(3,6))
-    print(subtract(1,-4))
+    print("a + b is", add(3,6))
+    print("a - b is", subtract(3,6))
