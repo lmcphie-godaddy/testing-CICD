@@ -23,5 +23,8 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Run python script
+      - name: Run python challenge
         run: python challenge.py
+        
+      - name: Run python unittest
+        run: python testing.py
