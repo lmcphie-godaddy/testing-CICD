@@ -36,5 +36,5 @@ jobs:
         run: | 
           docker build . --file ./challenge2/Docker/Dockerfile --tag git-image:$(date +%s)
 
-          docker run -t git-image
+          docker run . --file ./challenge2/Docker/Dockerfile --tag git-image:$(date +%s)
 
