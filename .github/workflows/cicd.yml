@@ -33,9 +33,9 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build and push
-        uses: docker/build-push-action@v2
+        # uses: docker/build-push-action@v2
         with:
-            file: testing-CICD/challenge2/Docker/
+          file: testing-CICD/challenge2/Docker/
         run: |
           docker build -t git-image .
           docker run -t git-image
