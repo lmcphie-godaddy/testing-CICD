@@ -5,12 +5,11 @@ FROM debian:11
 RUN apt-get update && apt-get upgrade -y 
 
 # Create the user & Change user to your name
-# Create new file in home directory
 
     # RUN adduser leandra
     # WORKDIR /home/leandra
-    # RUN touch test.txt
     # USER leandra
+    # RUN touch test.txt
 
 ARG USERNAME=leandra
 ARG USER_UID=1000
@@ -20,6 +19,8 @@ RUN groupadd --gid ${USER_GID} ${USERNAME} \
     && useradd --uid ${USER_UID} --gid ${USER_GID} -m ${USERNAME}
 
 USER leandra
+
+# Create new file in home directory
 WORKDIR /home/leandra
 RUN touch test.txt
 
