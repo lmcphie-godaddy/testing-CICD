@@ -33,4 +33,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build the Docker image
-        run: docker build . --file ./challenge2/Docker/Dockerfile --tag my-image-name:$(date +%s)
+        run: docker build . --file ./challenge2/Docker/Dockerfile --tag my-image-name:randomtag
+
+      - name: Run the Docker image 
+        run: docker run -t my-image-name:randomtag
