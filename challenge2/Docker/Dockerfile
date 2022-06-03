@@ -7,7 +7,8 @@ RUN apt-get update && apt-get upgrade -y
 # Create the user & Change user to your name
 # Create new file in home directory
 RUN adduser leandra
-RUN touch /home/test.txt
+WORKDIR /home
+RUN touch test.txt
 USER leandra
 
     # ARG USERNAME=leandra
