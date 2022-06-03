@@ -20,6 +20,6 @@ WORKDIR /home
 RUN touch /home/test.txt
 
 # Run ls when container starts
-    # ??RUN docker build -u leandra non-root  
+RUN ls  
 
-CMD ["echo", "Hello World!", "echo", "USER"]
+CMD ["echo", "Hello World!"]
